@@ -1,12 +1,14 @@
 import React from 'react'
 import { PiImageSquareBold } from "react-icons/pi";
 import { TfiText } from "react-icons/tfi";
-import { Container, Row, Col, Form, InputGroup } from 'react-bootstrap';
+import { Container, Row, Col,  } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 
 export default function Main() {
     return (
-        <container fluid>
+        <Container fluid>
             <Row className='main'>
                 <Col xs={1} className='main-bg'>
 
@@ -17,8 +19,16 @@ export default function Main() {
 
 
                 </Col>
-                <Col xs={2}  > <button type="button" className="btn btn-dark px-5 mt-2">Upload Images</button></Col>
-                <Col xs={7} className='main-bg '></Col>
+                <Col xs={2}  > <button type="button" className=" left-btn mt-2">Upload Images</button></Col>
+                <Col xs={7} className='main-bg positon-relative'>
+                    <div className='positon-absolute bottom-0 end-0'>
+                    <ButtonGroup aria-label="Basic example">
+      <Button variant="secondary">Left</Button>
+      <Button variant="secondary">Middle</Button>
+      <Button variant="secondary">Right</Button>
+    </ButtonGroup>
+                    </div>
+                </Col>
                 <Col xs={2}>
 
                     <div className='mb-3'>
@@ -36,6 +46,6 @@ export default function Main() {
                     </div>
                 </Col>
             </Row>
-        </container>
+        </Container>
     )
 }
