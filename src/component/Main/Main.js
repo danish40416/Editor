@@ -20,14 +20,8 @@ export default function Main() {
 
                 </Col>
                 <Col xs={2}  > <button type="button" className=" left-btn mt-2">Upload Images</button></Col>
-                <Col xs={7} className='main-bg positon-relative'>
-                    <div className='positon-absolute bottom-0 end-0'>
-                    <ButtonGroup aria-label="Basic example">
-      <Button variant="secondary">Left</Button>
-      <Button variant="secondary">Middle</Button>
-      <Button variant="secondary">Right</Button>
-    </ButtonGroup>
-                    </div>
+                <Col xs={7} className='main-bg '>
+                   
                 </Col>
                 <Col xs={2}>
 
