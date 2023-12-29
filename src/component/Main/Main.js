@@ -2,6 +2,7 @@ import React from 'react'
 import Right from './Right';
 import Left from './Left';
 import Sidebar from './Sidebar'
+import MainCenter from './MainCenter';
 
 export default function Main() {
     return (
@@ -9,7 +10,7 @@ export default function Main() {
             <div className="d-flex flex-row ">
                 <Sidebar />
                 <Left />
-                <div className="main-center"></div>
+                <MainCenter/>
                 <Right />
             </div>
         </div>
