@@ -30,7 +30,7 @@ const Right = () => {
               <p>Canvas Background</p>
               <p>Background Color</p>
             </div>
-          </div>
+          </div> 
         </div>
       )}
        {currentView === 'sheet' && (
