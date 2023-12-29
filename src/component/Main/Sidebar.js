@@ -9,10 +9,7 @@ export default function sidebar() {
             <p className='icon px-2'>images</p>
             <div className=' icon px-3 fs-4 pt-3'> <TfiText /> </div>
             <p className='icon px-3'>Text</p>
-            <div className='positon-absolute '  >
                 <button className='sidebar-btn   mx-3  '> ?</button>
-            </div>
-
         </div>
     )
 }

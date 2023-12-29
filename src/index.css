@@ -7,6 +7,7 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
 .nav-left {
   width: 360px;
   height: 55px;
@@ -21,6 +22,7 @@ body {
   width: 740px;
   height: 55px;
 }
+
 .navbar {
   background: #fafafa;
   border-bottom: 0.8px solid #e2d8d8;
@@ -120,7 +122,9 @@ body {
   font-weight: bolder;
   border-radius: 4px;
   border: none;
+  transition: background-color 0.3s ease
 }
+
 
 .right-bar-btn {
   outline: none;
@@ -135,28 +139,33 @@ body {
   font-weight: bolder;
   border-radius: 3px;
   border: none;
+  transition: background-color 0.3s ease;
 
 }
+
 .icon {
   color: #a09e9e;
   ;
 }
-.sidebar-btn{
+
+.sidebar-btn {
   margin-top: 290px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: #212529;
   color: #fff;
-font-weight: bolder;
-border: #212529;
+  font-weight: bolder;
+  border: #212529;
+  transition: background-color 0.3s ease;
 }
+
 
 .right-bar-btn {
   outline: none;
   border: none;
   background-color: #fff;
-  position: relative; 
+  position: relative;
 }
 
 .right-bar-btn.active::after {
@@ -170,7 +179,14 @@ border: #212529;
   background-color: #212529;
   transform: translateX(-50%);
 }
-.right-top-btn{
+
+.right-top-btn {
   display: flex;
   justify-content: space-around;
-} 
+}
+
+.sidebar-btn:hover,
+.left-btn:hover,
+.right-btn:hover {
+  background-color: orangered;
+}
