@@ -103,7 +103,7 @@ body {
   border-left: 2px solid #dcdfe1;
   border-right: 2px solid #dcdfe1;
   height: 100vh;
-  width: 717px;
+  flex-grow: 1;
 
 }
 
@@ -129,7 +129,7 @@ body {
 }
 
 .right-btn {
-  padding: 8px 118px;
+  padding: 8px 114px;
   background-color: #212529;
   color: #fff;
   font-weight: bolder;
@@ -140,4 +140,37 @@ body {
 .icon {
   color: #a09e9e;
   ;
+}
+.sidebar-btn{
+  margin-top: 290px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #212529;
+  color: #fff;
+font-weight: bolder;
+border: #212529;
+}
+
+.right-bar-btn {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  position: relative; 
+}
+
+.right-bar-btn.active::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -60%;
+  left: 50%;
+  width: 200%;
+  height: 2px;
+  background-color: #212529;
+  transform: translateX(-50%);
+}
+.right-top-btn{
+  display: flex;
+  justify-content: space-around;
 }
