@@ -32,7 +32,7 @@ const MainCenter = () => {
                 </Row>
 
                 {DATA.map((order) => (
-    <Row key={order.shopify_order_number} className="mx-0">
+    <Row  className="mx-0">
         <div className="d-flex first mb-1">
             <Col xs={1} className="d-flex align-items-center">
                 <Form>
