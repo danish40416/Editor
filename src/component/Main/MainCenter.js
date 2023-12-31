@@ -36,8 +36,8 @@ const MainCenter = () => {
         <div className="d-flex first mb-1">
             <Col xs={1} className="d-flex align-items-center">
                 <Form>
-                    <Form.Check type="checkbox" id={`default-checkbox-${order.shopify_order_number}`} />
-                </Form>{' '}
+                    <Form.Check type="checkbox" />
+                </Form>
                 <span>{order.shopify_order_number}</span>
             </Col>
             <Col xs={2} className="d-flex justify-content-center">{order.customer.name}</Col>
