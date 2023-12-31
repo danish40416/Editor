@@ -31,24 +31,26 @@ const MainCenter = () => {
                     </div>
                 </Row>
 
-                {DATA.map((order, index) => (
-                    <Row key={index} className="mx-0">
-                        <div className="d-flex first mb-1">
-                            <Col xs={1} className="d-flex align-items-center">
-                                <Form>
-                                    <Form.Check type="checkbox" id={`default-checkbox-${index}`} />
-                                </Form>{' '}
-                                <span>{order.shopify_order_number}</span></Col>
-                            <Col xs={2} className="d-flex justify-content-center">{order.customer.name}</Col>
-                            <Col xs={1}>{order.price}</Col>
-                            <Col xs={2}>{order.delivery_method}</Col>
-                            <Col xs={2}>{order.order_type}</Col>
-                            <Col xs={1}>{order.quantity_of_sheets}</Col>
-                            <Col xs={2}>{order.order_status}</Col>
-                            <Col xs={1}>{order.has_low_dpi}</Col>
-                        </div>
-                    </Row>
-                ))}
+                {DATA.map((order) => (
+    <Row key={order.shopify_order_number} className="mx-0">
+        <div className="d-flex first mb-1">
+            <Col xs={1} className="d-flex align-items-center">
+                <Form>
+                    <Form.Check type="checkbox" id={`default-checkbox-${order.shopify_order_number}`} />
+                </Form>{' '}
+                <span>{order.shopify_order_number}</span>
+            </Col>
+            <Col xs={2} className="d-flex justify-content-center">{order.customer.name}</Col>
+            <Col xs={1}>{order.price}</Col>
+            <Col xs={2}>{order.delivery_method}</Col>
+            <Col xs={2}>{order.order_type}</Col>
+            <Col xs={1}>{order.quantity_of_sheets}</Col>
+            <Col xs={2}>{order.order_status}</Col>
+            <Col xs={1}>{order.has_low_dpi}</Col>
+        </div>
+    </Row>
+))}
+
             </div>
         </div>
     );
